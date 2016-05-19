@@ -1,9 +1,9 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-03-16 02:16+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1736,10 +1736,6 @@ msgstr "EC2 पहचान डाउनलोड करें"
 msgid "Download Key Pair"
 msgstr "कुंजी युग्म डाउनलोड करें"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "&quot;%(keypair_name)s&quot; कुंजी युग्म डाउनलोड करें"
-
 msgid "Edit"
 msgstr "संपादन"
 
@@ -2330,20 +2326,6 @@ msgstr ""
 "प्रदान करने के लिए स्थान प्रदान किया गया हैं . ICMP नियमों के लिए आप के बजाय रिक्त स्थान "
 "में एक ICMP प्रकार और कोड निर्दिष्ट करें."
 
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-" For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-
 msgid "Forbidden"
 msgstr "निषेध"
 
@@ -2736,9 +2718,6 @@ msgstr "इंस्टांस कंसोल"
 msgid "Instance Console Log"
 msgstr "इंस्टांस कंसोल लॉग"
 
-msgid "Instance Count"
-msgstr "इंस्टांस गणना"
-
 msgid "Instance ID"
 msgstr "इंस्टैंस आईडी"
 
@@ -2894,10 +2873,6 @@ msgstr "इन नेटवर्कों के साथ इंस्टे�
 
 msgid "Launch instance with this policy profile"
 msgstr "इस नीति प्रोफाइल के साथ इंस्टेंस लॉन्च करें"
-
-#, python-format
-msgid "Launched %(count)s named \"%(name)s\"."
-msgstr " %(count)s \"%(name)s\" नामित शुभारंभ किया."
 
 msgid ""
 "Launching multiple instances is only supported for images and instance "
@@ -3252,9 +3227,6 @@ msgstr "अगला"
 msgid "Next Hops"
 msgstr "अगला हॉप्स"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "अगला&nbsp;&raquo;"
-
 msgid "No"
 msgstr "नहीं"
 
@@ -3434,9 +3406,6 @@ msgstr "वीएम अंतरफलक के लिए संजाल प�
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "वीएम अंतरफलक के लिए आने वाले पैकेट की संख्या"
-
-msgid "Number of instances to launch."
-msgstr "लॉन्च करने के लिए अनेक इंस्टैंस"
 
 msgid "Number of objects"
 msgstr "वस्तुओं की संख्या"
@@ -3872,9 +3841,6 @@ msgid_plural "Released Floating IPs"
 msgstr[0] "रिलीज किया फ्लोटिंग आईपी"
 msgstr[1] "रिलीज किया फ्लोटिंग आईपी"
 
-msgid "Reload"
-msgstr "फिर लोड करें"
-
 msgid "Remote"
 msgstr "दूरस्थ"
 
@@ -4130,10 +4096,6 @@ msgid_plural "Scheduled migration (pending confirmation) of Instances"
 msgstr[0] "इंस्टैंस का अनुसूचित माइग्रेशन (पुष्टि लंबित)"
 msgstr[1] "इंस्टैंस का अनुसूचित माइग्रेशन (पुष्टि लंबित)"
 
-#, python-format
-msgid "Scheduled resize of instance \"%s\"."
-msgstr "इंस्टेंस \"%s\" के अनुसूचित आकार परिवर्तन."
-
 msgctxt "Task status of an Instance"
 msgid "Scheduling"
 msgstr "समय-सारणी"
@@ -4217,9 +4179,6 @@ msgstr "कुंजी युग्म चुनें"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr " %s के लिए एक निगरानी टेम्पलेट का चयन करें"
-
-msgid "Select a name for your network."
-msgstr "अपने नेटवर्क के लिए नाम का चयन करें."
 
 msgid "Select a new agent"
 msgstr "नया एजेंट चयन करें"
@@ -4732,14 +4691,6 @@ msgstr "इंस्टेंस होस्ट \"%s\" के लिए ला�
 
 msgid "The instance password encrypted with your public key."
 msgstr "आपकी सार्वजनिक कुंजी के साथ एन्क्रिप्टेड इंस्टेंस पासवर्ड."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"कुंजी युग्म &quot;%(keypair_name)s&quot; स्वतः डाउनलोड हो जायेगा. यदि नहीं, तो नीचे "
-"दिए गए लिंक का उपयोग करें."
 
 msgid ""
 "The minimum disk size required to boot the image. If unspecified, this value "
@@ -6150,9 +6101,6 @@ msgstr ""
 "आप वांछित नियम टेम्पलेट निर्दिष्ट या कस्टम नियमों का उपयोग कर सकते हैं, विकल्प कस्टम "
 "टीसीपी नियम, कस्टम यूडीपी नियम, या कस्टम ICMP नियम हैं."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "आप वर्तमान के रूप में लॉग इन कर रहे उपयोक्ता को निष्क्रिय नहीं किया जा सकता है."
-
 msgid ""
 "You cannot revoke your administrative privileges from the domain you are "
 "currently logged into. Please switch to another domain with administrative "
@@ -6298,9 +6246,6 @@ msgstr "दोनों"
 
 msgid "clear"
 msgstr "साफ करें"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "कंसोल वर्तमान में अनुपलब्ध है. बाद में पुन: प्रयास करें."
 
 msgid "disabled"
 msgstr "निष्क्रिय"

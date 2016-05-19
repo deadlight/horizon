@@ -1,9 +1,9 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-03-16 02:16+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1746,10 +1746,6 @@ msgstr "EC2 क्रेडेऩ्शियल डावनलोड करा
 msgid "Download Key Pair"
 msgstr "की जोडी डोवनलोड करात"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "डावनलोड की जोडी  &quot;%(keypair_name)s&quot;"
-
 msgid "EC2 Access Key"
 msgstr "EC2 प्रवेश की"
 
@@ -2404,10 +2400,6 @@ msgstr "फ्लोटिंग आयपी"
 msgid "Folder created successfully."
 msgstr "फोल्डर यशस्विपणान तयार जाला."
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "GRE नेटवर्काखातीर, वैध टनेल IDs हे %(min)s  %(max)s तल्यान."
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -2418,27 +2410,6 @@ msgstr ""
 "येतात. \"पोर्ट व्याप्ती\" विकल्प निवडिल्ल्यान तुमका व्याप्तीचे सुरवेचे आणि निमणे पोर्ट "
 "दिवपाक जागो मेळटलो. ICMP नेमांखातीर, तुमी  ICMP प्रकार आणि संकेत दिल्ल्या जाग्यांत स्पश्ट "
 "करात."
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"VLAN नेटवर्काक, व्हर्च्युअल नेटवर्क वळखुपी प्रत्यक्ष नेटवर्कावेलो VLAN VID. वैध VLAN VID हे "
-"%(vlan_min)s %(vlan_max)s तल्यान. GRE वो VXLAN नेटवर्काखातीर, टनेल ID. GRE "
-"नेटवर्कांखातीर वैध टनेल ID %(gre_min)s %(gre_max)s वरवीं आसात. VXLAN नेटवर्कांखातीर, "
-"%(vxlan_min)s हे %(vxlan_max)s वरवीं आसात."
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "VLAN नेटवर्कांखातीर, वैध VLAN ID हे %(min)s %(max)s तल्यान."
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "VXLAN नेटवर्काखातीर, वैध टनेल IDs हे %(min)s %(max)s तल्यान."
 
 msgid "Forbidden"
 msgstr "सोडून दिल्ले"
@@ -2901,9 +2872,6 @@ msgstr "इंस्टंस कंसोल"
 msgid "Instance Console Log"
 msgstr "इंस्टंस कंसोल लॉग"
 
-msgid "Instance Count"
-msgstr "इंस्टंस मेजप"
-
 msgid "Instance ID"
 msgstr "इंस्टंस ID"
 
@@ -3067,10 +3035,6 @@ msgstr "ह्या नेटवर्कांसंयत इंस्टं�
 
 msgid "Launch instance with this policy profile"
 msgstr "ह्या धोरण प्रोफायलासंयत इंस्टंस चालू करात"
-
-#, python-format
-msgid "Launched %(count)s named \"%(name)s\"."
-msgstr "\"%(name)s\" चे %(count)s चालू केले"
 
 msgid ""
 "Launching multiple instances is only supported for images and instance "
@@ -3671,9 +3635,6 @@ msgstr "VM इंटरफेसाखातीर नेटवर्काव�
 msgid "Number of incoming packets for a VM interface"
 msgstr " VM इंटरफेसाखातीर भितर येवपी पॅकेटस्ची संख्या"
 
-msgid "Number of instances to launch."
-msgstr "चालू करपाच्या इंस्टंसिसांची संख्या."
-
 msgid "Number of objects"
 msgstr "वस्तींची संख्या"
 
@@ -4174,9 +4135,6 @@ msgstr ""
 "हेच वजन सगळ्या निवडिल्ल्या सदस्यांक लागू जातले आणि ते उपरांत  बदलू येता. वजन 1 ते 256 च्या "
 "व्याप्तीन आसूंक जाय."
 
-msgid "Reload"
-msgstr "परत लोड करात"
-
 msgid "Remote"
 msgstr "रिमोट"
 
@@ -4433,10 +4391,6 @@ msgstr "अदिक spec \"%s\" ची जतनाय जाल्या."
 msgid "Saved spec \"%s\"."
 msgstr "spec \"%s\" ची जतनाय जाल्या."
 
-#, python-format
-msgid "Scheduled resize of instance \"%s\"."
-msgstr " \"%s\" इन्स्टन्साचो थारिल्लो नवो आकार"
-
 msgctxt "Task status of an Instance"
 msgid "Scheduling"
 msgstr "नेमून दिता"
@@ -4541,9 +4495,6 @@ msgstr "की जोडी निवडात"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "%s खातीर निरीक्षक टेंप्लेट निवडात"
-
-msgid "Select a name for your network."
-msgstr "तुमच्या नेटवर्काखातीर नाव निवडात."
 
 msgid "Select a new agent"
 msgstr "नवो एजंट निवडात"
@@ -5000,12 +4951,6 @@ msgstr "QoS Spec गिरायक यशस्विपणान बदल्�
 
 #, python-format
 msgid ""
-"Successfully restored backup %(backup_name)s to volume with id: %(volume_id)s"
-msgstr ""
-"सफळ रीतीन परत केल्लो बॅकअप %(backup_name)s ते आयडीसह आकारमान: %(volume_id)s"
-
-#, python-format
-msgid ""
 "Successfully sent the request to change the volume type to \"%(vtype)s\" for "
 "volume: \"%(name)s\""
 msgstr ""
@@ -5219,14 +5164,6 @@ msgstr "इन्स्टन्स \"%s\" येजमान मजगती �
 
 msgid "The instance password encrypted with your public key."
 msgstr "तुमच्या भौशिक की संयत एनक्रिप्ट केल्लो इंस्टंस पासवर्ड."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"की जोडी &quot;%(keypair_name)s&quot; आपशीच डावनलोड जावपाक जाय. जाव ना जाल्यार "
-"सकयली लिंक वापरात."
 
 msgid ""
 "The minimum disk size required to boot the image. If unspecified, this value "
@@ -6859,9 +6796,6 @@ msgstr ""
 "तुमच्यान जाय ती नेम टेम्प्लेट स्पश्ट करू येता वो कस्टम नेम वापरू येता, विकल्प आसात कस्टम TCP "
 "नेम, कस्टम UDP नेम, वो कस्टम ICMP नेम."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "तुमी सध्या लॉग इन आसात तो वापरपी तुमच्यान अक्षम करपाक येना."
-
 msgid ""
 "You cannot revoke your administrative privileges from the domain you are "
 "currently logged into. Please switch to another domain with administrative "
@@ -7006,9 +6940,6 @@ msgstr "दोनूय"
 
 msgid "clear"
 msgstr "साफ"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "कंसोल सद्या उपलब्ध ना. मात्शे मागीर यत्न करात."
 
 msgid "disabled"
 msgstr "निष्क्रिय करात"

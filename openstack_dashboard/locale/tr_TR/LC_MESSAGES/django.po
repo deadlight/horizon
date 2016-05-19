@@ -2,12 +2,13 @@
 # Doug Fish <drfish@us.ibm.com>, 2015. #zanata
 # Mücahit Büyükyılmaz <mucahit@deltanoc.com>, 2015. #zanata
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 # Mücahit Büyükyılmaz <mucahit@deltanoc.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-03-16 02:16+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -340,29 +341,11 @@ msgstr " : Sonraki nokta"
 msgid " Also failed to delete port %s"
 msgstr " Bağlantı noktası %s silinemedi de"
 
-msgid "\"Add Router Route\""
-msgstr "\"Router Rotası Ekle\""
-
 msgid ""
 "\"Customization Script\" is analogous to \"User Data\" in other systems."
 msgstr ""
 "\"Özelleştirme Betiği\" diğer sistemlerdeki \"Kullanıcı Verisi\" ile "
 "benzeşir."
-
-msgid "\"Edit Volume Type\""
-msgstr "\"Mantıksal Sürücü Türünü Düzenle\""
-
-msgid "\"N/A\""
-msgstr "\"N/A\""
-
-msgid "\"Namespace Resource Type Associations\""
-msgstr "\"İsim Uzayı Kaynak Türü İlişkilendirmeleri\""
-
-msgid "\"No flavors meet minimum criteria for selected image.\""
-msgstr "\"Seçili imaj için asgari gereklilikleri karşılayan nitelik yok.\""
-
-msgid "\"None\""
-msgstr "\"Hiçbiri\""
 
 msgid ""
 "\"None\" indicates that no QoS Spec is currently associated. Conversely, "
@@ -371,10 +354,6 @@ msgstr ""
 "\"Hiçbiri\" şu anda hiçbir QoS Özelliğinin ilişkili olmadığını gösterir. "
 "Aynı şekilde, QoS Özelliğini \"None\" olarak ayarlamak mevcut ilişkiyi "
 "kaldıracaktır."
-
-msgid ""
-"\"Some flavors not meeting minimum image requirements have been disabled.\""
-msgstr "Asgari imaj gerekliliklerini karşılamayan bazı nitelikler kapatıldı.\""
 
 #, python-format
 msgid "%(field_name)s: Invalid IP address (value=%(ip)s)"
@@ -459,9 +438,6 @@ msgstr "%s GB"
 #, python-format
 msgid "%sMB"
 msgstr "%sMB"
-
-msgid "&laquo;&nbsp;Back"
-msgstr "&laquo;&nbsp;Geri"
 
 msgid "(Quota exceeded)"
 msgstr "(Kota Aşıldı)"
@@ -2787,10 +2763,6 @@ msgstr "EC2 Kimliklerini İndir"
 msgid "Download Key Pair"
 msgstr "Anahtar Çiftini İndir"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "&quot;%(keypair_name)s&quot; anahtar çiftini indir"
-
 msgid "EC2 Access Key"
 msgstr "EC2 Erişim Anahtarı"
 
@@ -3636,11 +3608,6 @@ msgstr "Değişken IP'ler:"
 msgid "Folder created successfully."
 msgstr "Dizin başarıyla oluşturuldu."
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"GRE ağları için, geçerli tünel ID'leri %(min)s ile %(max)s arasındadır."
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -3652,29 +3619,6 @@ msgstr ""
 "seçmek başlangıç ve bitiş bağlantı noktalarını seçebileceğiniz alanı sağlar. "
 "ICMP kuralları için ise sağlanan boşluklarda bir ICMP türü ve kodu "
 "belirtirsiniz."
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"VLAN ağlar için, fiziksel ağdaki sanal ağı gerçekleştiren VLAN VID. Geçerli "
-"VLAN VID'leri %(vlan_min)s ile %(vlan_max)s arasındadır. GRE veya VXLAN "
-"ağları için, tünel ID'sidir. GRE ağlar için geçerli tünel ID'leri "
-"%(gre_min)s ile %(gre_max)s arasındadır. VXLAN ağlar için, %(vxlan_min)s ile "
-"%(vxlan_max)s arasında."
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "VLAN ağlar için, geçerli VLAN ID'leri %(min)s ile %(max)s arasındadır."
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"VXLAN ağları için, geçerli tünel ID'leri %(min)s den %(max)s a kadardır."
 
 msgid "Forbidden"
 msgstr "Yasaklanmış"
@@ -4223,9 +4167,6 @@ msgstr "Sunucu Konsolu"
 msgid "Instance Console Log"
 msgstr "Sunucu Konsol Günlüğü"
 
-msgid "Instance Count"
-msgstr "Sunucu Sayısı"
-
 msgid "Instance ID"
 msgstr "Instance ID"
 
@@ -4415,10 +4356,6 @@ msgstr "Bu ağlarla sunucu başlat"
 
 msgid "Launch instance with this policy profile"
 msgstr "Bu ilke profilinde sunucu başlat"
-
-#, python-format
-msgid "Launched %(count)s named \"%(name)s\"."
-msgstr "\"%(name)s\" isimli %(count)s başlatıldı."
 
 msgid ""
 "Launching multiple instances is only supported for images and instance "
@@ -4989,9 +4926,6 @@ msgstr ""
 msgid "Next Hops"
 msgstr "Sonraki Hops"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "İleri&nbsp;&raquo;"
-
 msgid "No"
 msgstr "Hayır"
 
@@ -5214,9 +5148,6 @@ msgstr "VM adaptörü için networkten gelen byte sayısı"
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "VM adaptörü için networkten gelen paket sayısı"
-
-msgid "Number of instances to launch."
-msgstr "Başlatılacak sunucu sayısı."
 
 msgid "Number of log lines to be shown per instance"
 msgstr "Sunucu başına gösterilecek kayıt satırları sayısı"
@@ -5898,9 +5829,6 @@ msgid_plural "Released Floating IPs"
 msgstr[0] "Değişken IP'ler Serbest Bırakıldı"
 msgstr[1] ""
 
-msgid "Reload"
-msgstr "Yeniden yükle"
-
 msgid "Remote"
 msgstr "Uzak"
 
@@ -6348,10 +6276,6 @@ msgid_plural "Scheduled migration (pending confirmation) of Instances"
 msgstr[0] "Sunucuların göçü (doğrulama bekleniyor) zamanlandı"
 msgstr[1] ""
 
-#, python-format
-msgid "Scheduled resize of instance \"%s\"."
-msgstr "\"%s\" sunucusunun yeniden boyutlandırılması zamanlandı."
-
 msgctxt "Task status of an Instance"
 msgid "Scheduling"
 msgstr "Zamanlanıyor"
@@ -6467,9 +6391,6 @@ msgstr "Bir anahtar çifti seç"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "%s için bir izleyici şablonu seçin"
-
-msgid "Select a name for your network."
-msgstr "Ağınız için bir ad seçin"
 
 msgid "Select a new QoS spec"
 msgstr "Yeni bir QoS özelliği seçin"
@@ -7084,13 +7005,6 @@ msgstr "QoS Özelliği tüketicisi başarıyla değiştirildi."
 
 #, python-format
 msgid ""
-"Successfully restored backup %(backup_name)s to volume with id: %(volume_id)s"
-msgstr ""
-"Yedek %(backup_name)s başarıyla mantıksal sürücüye geri yüklendi: "
-"%(volume_id)s"
-
-#, python-format
-msgid ""
 "Successfully sent the request to change the volume type to \"%(vtype)s\" for "
 "volume: \"%(name)s\""
 msgstr ""
@@ -7321,13 +7235,6 @@ msgstr ""
 msgid "The Aggregate was updated."
 msgstr "Takım güncellendi."
 
-msgid ""
-"The Authorization Key will not be available after closing this page, so you "
-"must capture it now, or else you will be unable to use the transfer."
-msgstr ""
-"Yetkilendirme Anahtarı bu sayfayı kapattıktan sonra var olmayacaktır, yani "
-"şimdi yakalamalısınız, yoksa aktarımı kullanamayacaksınız."
-
 msgid "The ICMP code is invalid."
 msgstr "ICMP kodu geçersiz."
 
@@ -7431,14 +7338,6 @@ msgstr "Sunucu, \"%s\" istemcisine canlı geçişi hazırlıyor."
 
 msgid "The instance password encrypted with your public key."
 msgstr "Genel anahtarınızla şifrelenmiş sunucu parolası."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"&quot;%(keypair_name)s&quot; anahtar çifti otomatik olarak indirilmeli. "
-"İndirilmezse aşağıdaki bağlantıyı kullanın."
 
 msgid ""
 "The maximum time in seconds for a monitor to wait for a reply. It must be "
@@ -9518,9 +9417,6 @@ msgstr ""
 "İstenen kural şablonunu belirtebilir veya özel kurallar kullanabilirsiniz, "
 "seçenekler Özel TCP Kuralı, Özel UDP Kuralı, veeya Özel ICMP Kuralıdır."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "Oturum açtığınız olduğunuz kullanıcıyı devre dışı bırakamazsınız."
-
 msgid "You cannot disable your current project"
 msgstr "Etkin projenizi kapatamazsınız."
 
@@ -9689,9 +9585,6 @@ msgstr "her ikisi de"
 
 msgid "clear"
 msgstr "temizle"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "konsol şu an kullanılamaz. Lütfen daha sonra tekrar deneyin."
 
 msgid "disabled"
 msgstr "kapalı"

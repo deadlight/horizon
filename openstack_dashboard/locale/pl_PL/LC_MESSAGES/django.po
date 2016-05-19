@@ -1,14 +1,15 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 # Łukasz Jernas <deejay1@srem.org>, 2015. #zanata
+# Łukasz Jernas <deejay1@srem.org>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-03-16 02:16+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-10-06 02:06+0000\n"
+"PO-Revision-Date: 2016-04-09 08:09+0000\n"
 "Last-Translator: Łukasz Jernas <deejay1@srem.org>\n"
 "Language-Team: Polish (Poland)\n"
 "Language: pl-PL\n"
@@ -322,30 +323,11 @@ msgstr ": następny przeskok"
 msgid " Also failed to delete port %s"
 msgstr "Nie można również usunąc portu %s"
 
-msgid "\"Add Router Route\""
-msgstr "„Dodanie trasy routera”"
-
 msgid ""
 "\"Customization Script\" is analogous to \"User Data\" in other systems."
 msgstr ""
 "„Skrypt dostosowujący” jest odpowiednikiem „danych użytkownika” w innych "
 "systemach."
-
-msgid "\"Edit Volume Type\""
-msgstr "„Edycja typu wolumenu”"
-
-msgid "\"N/A\""
-msgstr "„B/D”"
-
-msgid "\"Namespace Resource Type Associations\""
-msgstr "„Powiązania typów zasobów przestrzeni nazw”"
-
-msgid "\"No flavors meet minimum criteria for selected image.\""
-msgstr ""
-"„Żadna z odmian nie spełnia minimalnych kryteriów dla wybranego obrazu.”"
-
-msgid "\"None\""
-msgstr "„Brak”"
 
 msgid ""
 "\"None\" indicates that no QoS Spec is currently associated. Conversely, "
@@ -354,11 +336,6 @@ msgstr ""
 "„Brak” oznacza, że nie przypisano żadnej specyfikacji QoS. Podobnie "
 "ustawienie specyfikacji QoS na „Brak” spowoduje usunięcie obecnego "
 "powiązania."
-
-msgid ""
-"\"Some flavors not meeting minimum image requirements have been disabled.\""
-msgstr ""
-"„Część odmian niespełniających minimalnych wymagań obrazu zostało wyłączone.”"
 
 #, python-format
 msgid "%(field_name)s: Invalid IP address (value=%(ip)s)"
@@ -444,9 +421,6 @@ msgstr "%sGB"
 #, python-format
 msgid "%sMB"
 msgstr "%sMB"
-
-msgid "&laquo;&nbsp;Back"
-msgstr "&laquo;&nbsp;Wstecz"
 
 msgid "(Quota exceeded)"
 msgstr "(Przekroczono limity)"
@@ -1357,6 +1331,7 @@ msgctxt "current status of stack"
 msgid "Check In Progress"
 msgstr "Trwa sprawdzanie"
 
+#, fuzzy
 msgid "Check Stack"
 msgid_plural "Check Stacks"
 msgstr[0] "Sprawdź stos"
@@ -2874,10 +2849,6 @@ msgstr "Pobierz dane uwierzytelniające EC2"
 msgid "Download Key Pair"
 msgstr "Pobierz parę kluczy"
 
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "Pobierz parę kluczy &quot;%(keypair_name)s&quot;"
-
 msgid "EC2 Access Key"
 msgstr "Klucz dostępu EC2"
 
@@ -3751,10 +3722,6 @@ msgstr "Pływające adresy IP:"
 msgid "Folder created successfully."
 msgstr "Utworzono katalog."
 
-#, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "Dla sieci GRE, poprawne ID tunelu to %(min)s do %(max)s."
-
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
 "of ports. Selecting the \"Port Range\" option will provide you with space to "
@@ -3765,27 +3732,6 @@ msgstr ""
 "portów. Wybranie opcji „Zakres portów” wyświetli pola pozwalające na podanie "
 "zarówno początku jak i końca zakresu. Dla reguł protokołu ICMP natomiast, "
 "podaje się jego typ i kod."
-
-#, python-format
-msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
-msgstr ""
-"VLAN VID fizycznej sieci realizującej sieć wirtualną, dla sieci VLAN. "
-"Poprawne VID VLAN to %(vlan_min)s do %(vlan_max)s. Dla sieci GRE lub VXLAN, "
-"należy podać ID tunelu. Poprawne ID tunelu dla sieci GRE to %(gre_min)s do "
-"%(gre_max)s, natomiast dla sieci VXLAN to %(vxlan_min)s do %(vxlan_max)s."
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr "Dla sieci VLAN, poprawne VLAN ID to %(min)s do %(max)s."
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr "Dla sieci VXLAN, poprawne ID tunelu to %(min)s do %(max)s."
 
 msgid "Forbidden"
 msgstr "Zabronione"
@@ -4341,9 +4287,6 @@ msgstr "Konsola instancji"
 msgid "Instance Console Log"
 msgstr "Log konsoli instancji"
 
-msgid "Instance Count"
-msgstr "Ilość instancji"
-
 msgid "Instance ID"
 msgstr "ID instancji"
 
@@ -4535,10 +4478,6 @@ msgstr "Uruchom instancję z tymi sieciami"
 
 msgid "Launch instance with this policy profile"
 msgstr "Uruchom instancję z tym profilem zasad"
-
-#, python-format
-msgid "Launched %(count)s named \"%(name)s\"."
-msgstr "Uruchomiono %(count)s nazwanych „%(name)s”."
 
 msgid ""
 "Launching multiple instances is only supported for images and instance "
@@ -4795,6 +4734,7 @@ msgstr "Metryka:"
 msgid "Migrate"
 msgstr "Migruj"
 
+#, fuzzy
 msgid "Migrate Host"
 msgid_plural "Migrate Hosts"
 msgstr[0] "Migruj serwer"
@@ -5117,9 +5057,6 @@ msgstr ""
 msgid "Next Hops"
 msgstr "Następne przeskoki"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "Następne&nbsp;&raquo;"
-
 msgid "No"
 msgstr "Nie"
 
@@ -5342,9 +5279,6 @@ msgstr "Ilość przychodzących bajtów na interfejsie sieciowym VM"
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "Ilość przychodzących pakietów na interfejsie VM"
-
-msgid "Number of instances to launch."
-msgstr "Ilość instancji do uruchomienia."
 
 msgid "Number of log lines to be shown per instance"
 msgstr "Ilość linii logów wyświetlana per instancja"
@@ -6039,9 +5973,6 @@ msgstr[0] "Zwolniono pływający adres IP"
 msgstr[1] "Zwolniono pływające adresy IP"
 msgstr[2] "Zwolniono pływające adresy IP"
 
-msgid "Reload"
-msgstr "Przeładuj"
-
 msgid "Remote"
 msgstr "Zdalne"
 
@@ -6221,6 +6152,7 @@ msgstr[0] "Wznów instancję"
 msgstr[1] "Wznów instancje"
 msgstr[2] "Wznów instancje"
 
+#, fuzzy
 msgid "Resume Stack"
 msgid_plural "Resume Stacks"
 msgstr[0] "Wznów stos"
@@ -6512,10 +6444,6 @@ msgstr[0] "Zaplanowano migrację instancji (oczekuje na potwierdzenie)"
 msgstr[1] "Zaplanowano migrację instancji (oczekuje na potwierdzenie)"
 msgstr[2] "Zaplanowano migrację instancji (oczekuje na potwierdzenie)"
 
-#, python-format
-msgid "Scheduled resize of instance \"%s\"."
-msgstr "Dodano do kolejki zmianę rozmiaru instancji „%s”."
-
 msgctxt "Task status of an Instance"
 msgid "Scheduling"
 msgstr "Kolejkowanie"
@@ -6631,9 +6559,6 @@ msgstr "Wybierz parę kluczy"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "Wybór szablonu monitora dla %s"
-
-msgid "Select a name for your network."
-msgstr "Wybór nazwy dla sieci."
 
 msgid "Select a new QoS spec"
 msgstr "Wybierz nową specyfikację QoS"
@@ -7271,12 +7196,6 @@ msgstr "Zmodyfikowano konsumenta specyfikacji QoS."
 
 #, python-format
 msgid ""
-"Successfully restored backup %(backup_name)s to volume with id: %(volume_id)s"
-msgstr ""
-"Przywrócono kopię zapasową %(backup_name)s na wolumen o nazwie: %(volume_id)s"
-
-#, python-format
-msgid ""
 "Successfully sent the request to change the volume type to \"%(vtype)s\" for "
 "volume: \"%(name)s\""
 msgstr ""
@@ -7353,6 +7272,7 @@ msgstr[0] "Uśpij instancję"
 msgstr[1] "Uśpij instancje"
 msgstr[2] "Uśpij instancje"
 
+#, fuzzy
 msgid "Suspend Stack"
 msgid_plural "Suspend Stacks"
 msgstr[0] "Wstrzymaj stos"
@@ -7514,14 +7434,6 @@ msgstr ""
 msgid "The Aggregate was updated."
 msgstr "Zaktualizowano agregat."
 
-msgid ""
-"The Authorization Key will not be available after closing this page, so you "
-"must capture it now, or else you will be unable to use the transfer."
-msgstr ""
-"Klucz autoryzacyjny nie będzie więcej dostępny po zamknięciu tej strony, "
-"należy zanotować go teraz, gdyż w przeciwnym wypadku nie będzie można "
-"dokonać przeniesienia."
-
 msgid "The ICMP code is invalid."
 msgstr "Niepoprawny kod ICMP."
 
@@ -7626,14 +7538,6 @@ msgstr "Hasło instancji zaszyfrowane kluczem publicznym."
 
 msgid "The instance(s) will be shut off."
 msgstr "Instancja/e zostanie wyłączona/e."
-
-#, python-format
-msgid ""
-"The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
-msgstr ""
-"Para kluczy &quot;%(keypair_name)s&quot; powinna zostać automatycznie "
-"pobrana. Jeśli nie została, należy skorzystać z poniższego odnośnika."
 
 msgid ""
 "The maximum time in seconds for a monitor to wait for a reply. It must be "
@@ -9759,9 +9663,6 @@ msgstr ""
 "Można wybrać reguły z szablonu lub wykorzystać własne reguły TCP, UDP lub "
 "ICMP."
 
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "Nie można wyłączyć aktualnie zalogowanego użytkownika."
-
 msgid "You cannot disable your current project"
 msgstr "Nie można wyłączyć bieżącego projektu."
 
@@ -9927,9 +9828,6 @@ msgstr "oba"
 
 msgid "clear"
 msgstr "clear"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "Konsola jest w tej chwili niedostępna. Proszę spróbować później."
 
 msgid "disabled"
 msgstr "wyłączone"

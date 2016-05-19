@@ -1,15 +1,17 @@
 # Yuko Katabami <yukokatabami@gmail.com>, 2015. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
+# Shu Muto <shu-mutou@rf.jp.nec.com>, 2016. #zanata
 # Yuko Katabami <yukokatabami@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-03-16 02:15+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev108\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-04-18 19:07+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-03-16 11:18+0000\n"
-"Last-Translator: Yuko Katabami <yukokatabami@gmail.com>\n"
+"PO-Revision-Date: 2016-04-11 02:34+0000\n"
+"Last-Translator: Shu Muto <shu-mutou@rf.jp.nec.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
 "X-Generator: Zanata 3.7.3\n"
@@ -54,7 +56,7 @@ msgid "Add Interface"
 msgstr "インターフェースの追加"
 
 msgid "Added"
-msgstr "追加しました"
+msgstr "追加済み"
 
 msgid "Allocated"
 msgstr "割り当て済み"
@@ -76,6 +78,9 @@ msgstr "戻る"
 
 msgid "Cancel"
 msgstr "取り消し"
+
+msgid "Click each item to get its description here."
+msgstr "説明を取得するには、それぞれのアイテムをクリックしてください。"
 
 msgid "Click here for filters."
 msgstr "フィルターを指定するにはここをクリックしてください。"
@@ -115,7 +120,7 @@ msgid "Create Subnet"
 msgstr "サブネットの作成"
 
 msgid "Current Usage"
-msgstr "現在の使用状況"
+msgstr "現在使用中"
 
 msgid "Custom"
 msgstr "カスタム"

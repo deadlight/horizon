@@ -57,7 +57,7 @@ class TableRegion(baseregion.BaseRegion):
     _search_button_locator = (by.By.CSS_SELECTOR,
                               'div.table_search > button')
     _search_option_locator = (by.By.CSS_SELECTOR,
-                              'div.table_search select.form-control')
+                              'div.table_search > .themable-select')
     marker_name = 'marker'
     prev_marker_name = 'prev_marker'
 
@@ -71,6 +71,10 @@ class TableRegion(baseregion.BaseRegion):
     @property
     def _prev_locator(self):
         return by.By.CSS_SELECTOR, 'a[href^="?%s"]' % self.prev_marker_name
+
+    def _search_menu_value_locator(self, value):
+        return (by.By.CSS_SELECTOR,
+                'ul.dropdown-menu a[data-select-value="%s"]' % value)
 
     def __init__(self, driver, conf):
         self._default_src_locator = self._table_locator(self.__class__.name)
@@ -105,8 +109,10 @@ class TableRegion(baseregion.BaseRegion):
         self._click_search_btn()
 
     def set_filter_value(self, value):
-        srch_option = self._get_element(*self._search_option_locator)
-        return self._select_dropdown_by_value(value, srch_option)
+        search_menu = self._get_element(*self._search_option_locator)
+        search_menu.click()
+        item_locator = self._search_menu_value_locator(value)
+        search_menu.find_element(*item_locator).click()
 
     def get_row(self, column_name, text, exact_match=True):
         """Get row that contains specified text in specified column.
@@ -145,20 +151,27 @@ class TableRegion(baseregion.BaseRegion):
                 for elem in self._get_elements(*self._rows_locator)]
 
     def is_row_deleted(self, row_getter):
+        def predicate(driver):
+            if self._is_element_present(*self._empty_table_locator):
+                return True
+            with self.waits_disabled():
+                return not self._is_element_displayed(row_getter())
         try:
-            self.wait_till_element_disappears(row_getter)
+            self._wait_until(predicate)
         except exceptions.TimeoutException:
             return False
         except IndexError:
             return True
         return True
 
-    def is_cell_status(self, cell_getter, status):
+    def wait_cell_status(self, cell_getter, statuses):
+        if not isinstance(statuses, (list, tuple)):
+            statuses = (statuses,)
         try:
-            self._wait_till_text_present_in_element(cell_getter, status)
+            return self._wait_till_text_present_in_element(cell_getter,
+                                                           statuses)
         except exceptions.TimeoutException:
             return False
-        return True
 
     def is_next_link_available(self):
         try:
@@ -294,5 +307,25 @@ def bind_row_action(action_name):
                     method.__name__, action_name)
                 raise ValueError(msg)
             return method(table, action_element, row)
+        return wrapper
+    return decorator
+
+
+def bind_row_anchor_column(column_name):
+    """A decorator to bind table region method to a anchor in a column.
+
+    Typical examples of such tables are Project -> Compute -> Images, Admin
+    -> System -> Flavors, Project -> Compute -> Instancies.
+    The method can be used to follow the link in the anchor by the click.
+    """
+
+    def decorator(method):
+        @functools.wraps(method)
+        def wrapper(table, row):
+            cell = row.cells[column_name]
+            action_element = cell.find_element(
+                by.By.CSS_SELECTOR, 'td.%s > a' % NORMAL_COLUMN_CLASS)
+            return method(table, action_element, row)
+
         return wrapper
     return decorator

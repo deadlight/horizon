@@ -2,18 +2,20 @@
 # OpenStack Infra <zanata@openstack.org>, 2015. #zanata
 # Shu Muto <shu-mutou@rf.jp.nec.com>, 2015. #zanata
 # Yuko Katabami <yukokatabami@gmail.com>, 2015. #zanata
+# Akihiro Motoki <amotoki@gmail.com>, 2016. #zanata
+# Andreas Jaeger <jaegerandi@gmail.com>, 2016. #zanata
 # Mie Yamamoto <myamamot@redhat.com>, 2016. #zanata
 # Shu Muto <shu-mutou@rf.jp.nec.com>, 2016. #zanata
 # Yuko Katabami <yukokatabami@gmail.com>, 2016. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-03-18 12:48+0000\n"
+"Project-Id-Version: horizon 9.0.1.dev276\n"
+"Report-Msgid-Bugs-To: https://bugs.launchpad.net/openstack-i18n/\n"
+"POT-Creation-Date: 2016-05-15 05:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-03-18 11:12+0000\n"
+"PO-Revision-Date: 2016-05-12 11:52+0000\n"
 "Last-Translator: Yuko Katabami <yukokatabami@gmail.com>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -367,31 +369,10 @@ msgstr ""
 msgid " Also failed to delete port %s"
 msgstr "ポート %s の削除にも失敗しました。"
 
-msgid "\"Add Router Route\""
-msgstr "ルータールートの追加"
-
-msgid "\"Containers\""
-msgstr "\"コンテナー\""
-
 msgid ""
 "\"Customization Script\" is analogous to \"User Data\" in other systems."
 msgstr ""
 "「カスタマイズスクリプト」は他のシステムの「ユーザーデータ」と同じです。"
-
-msgid "\"Edit Volume Type\""
-msgstr "ボリューム種別の編集"
-
-msgid "\"N/A\""
-msgstr "なし"
-
-msgid "\"Namespace Resource Type Associations\""
-msgstr "名前空間とリソース種別の関連付け"
-
-msgid "\"No flavors meet minimum criteria for selected image.\""
-msgstr "選択したイメージの最小限の要件を満たすフレーバーがありません。"
-
-msgid "\"None\""
-msgstr "なし"
 
 msgid ""
 "\"None\" indicates that no QoS Spec is currently associated. Conversely, "
@@ -399,10 +380,6 @@ msgid ""
 msgstr ""
 "「なし」は QoS スペックが現在関連付けられていないことを示します。また、QoS ス"
 "ペックを「なし」に設定すると、現在の関連付けが削除されます。 "
-
-msgid ""
-"\"Some flavors not meeting minimum image requirements have been disabled.\""
-msgstr "イメージの最小限の要件を満たしていないフレーバーが無効になっています。"
 
 #, python-format
 msgid "%(field_name)s: Invalid IP address (value=%(ip)s)"
@@ -491,9 +468,6 @@ msgstr "%sGiB"
 #, python-format
 msgid "%sMB"
 msgstr "%sMB"
-
-msgid "&laquo;&nbsp;Back"
-msgstr "&laquo;&nbsp;戻る"
 
 msgid "(Quota exceeded)"
 msgstr "(クォータを超過しました)"
@@ -887,8 +861,9 @@ msgid ""
 "added to the same consistency group only if they are associated with same "
 "back end."
 msgstr ""
-"ボリューム種別をこの整合性に追加します。同じバックエンドに関連付けられている"
-"場合には、複数のボリューム種別を同じ整合性グループに追加することができます。"
+"ボリューム種別をこの整合性グループに追加します。同じバックエンドに関連付けら"
+"れている場合には、複数のボリューム種別を同じ整合性グループに追加することがで"
+"きます。"
 
 msgid "Add, modify or remove the QoS Spec associated with this volume type."
 msgstr ""
@@ -1143,7 +1118,7 @@ msgstr ""
 "ければ、管理者に連絡してください。"
 
 msgid "Another Plugin-based Panel"
-msgstr "他のプラグインによるパネル"
+msgstr "他のプラグインベースのパネル"
 
 msgid "Any"
 msgstr "ANY"
@@ -1360,7 +1335,7 @@ msgid "Binding: Host"
 msgstr "バインド: ホスト"
 
 msgid "Binding: VNIC Type"
-msgstr "バインド: VNIC の種別"
+msgstr "バインド: 仮想 NIC の種別"
 
 msgctxt "Task status of an Instance"
 msgid "Block Device Mapping"
@@ -1427,11 +1402,14 @@ msgstr "CIDR"
 msgid "CIDR must be specified."
 msgstr "CIDR は指定する必要があります。"
 
+msgid "CPU architecture of the image."
+msgstr "このイメージの CPU アーキテクチャー。"
+
 msgid "CPU time used"
 msgstr "使用 CPU 時間"
 
 msgid "Can not specify both image and external image location."
-msgstr "イメージと外部イメージを同時に指定できません。"
+msgstr "イメージと外部のイメージの場所を同時に指定できません。"
 
 msgid "Cancel"
 msgstr "取り消し"
@@ -1724,7 +1702,7 @@ msgid "Containers"
 msgstr "コンテナー"
 
 msgid "Content Type"
-msgstr "コンテンツ種別"
+msgstr "コンテンツタイプ"
 
 msgid "Contents"
 msgstr "内容"
@@ -1853,12 +1831,12 @@ msgstr ""
 "IKE ポリシーには、以下の属性を関連付けできます。\n"
 "\n"
 "<li>認証アルゴリズム: 指定できる認証アルゴリズムは SHA1 のみです。</li><li>暗"
-"号アルゴリズム: この IKE ポリシーで使用するアルゴリズム種別です。 3des, "
-"aes-128, aes-192, aes-256 が指定できます。</li><li>IKE バージョン: 使用する"
-"バージョン種別です。 v1, v2 が指定できます</li><li>ライフタイム: 単位と値で構"
+"号アルゴリズム: この IKE ポリシーで使用するアルゴリズム種別です。3des、"
+"aes-128、aes-192、aes-256 を指定できます。</li><li>IKE バージョン: 使用する"
+"バージョン種別です。v1、v2 を指定できます</li><li>ライフタイム: 単位と値で構"
 "成されます。単位は「秒」で、デフォルト値は 3600 です。</li><li>Perfect "
-"Forward Secrecy: PFS に指定できるのは Diffie-Hellman グループ 2, 5(デフォル"
-"ト), 14 です。</li><li>IKE フェーズ 1 のメッセージ交換モード: 指定できるのは "
+"Forward Secrecy: PFS に指定できるのは Diffie-Hellman グループ 2、5(デフォル"
+"ト)、14 です。</li><li>IKE フェーズ 1 のメッセージ交換モード: 指定できるのは "
 "'main' モードのみです。</li>\n"
 "すべての属性は任意です。"
 
@@ -1882,14 +1860,13 @@ msgstr ""
 "IPSec ポリシーには、以下の属性を関連付けできます。\n"
 "\n"
 "<li>認証アルゴリズム: 指定できる認証アルゴリズムは SHA1 のみです。</li><li>カ"
-"プセル化モード: 使用する IPSec トンネル種別です。トンネルとトランスポートが指"
+"プセル化モード: 使用する IPSec トンネル種別です。トンネル、トランスポートを指"
 "定できます。</li><li>暗号アルゴリズム: この IPSec ポリシーで使用するアルゴリ"
-"ズム種別です。 3des, aes-128, aes-192, aes-256 が指定できます。</li><li>ライ"
-"フタイム: 単位と値で構成されます。単位は「秒」で、デフォルト値は 3600 です。"
-"</li><li>Perfect Forward Secrecy: PFS に指定できるのは Diffie-Hellman グルー"
-"プ 2, 5(デフォルト), 14 です。</li><li>トランスフォームプロトコル: この "
-"IPSec ポリシーで使用するプロトコル種別です。 esp, ah, ah-esp を指定できます。"
-"</li>\n"
+"ズム種別です。3des、aes-128、aes-192、aes-256 を指定できます。</li><li>ライフ"
+"タイム: 単位と値で構成されます。単位は「秒」で、デフォルト値は 3600 です。</"
+"li><li>Perfect Forward Secrecy: PFS に指定できるのは Diffie-Hellman グループ "
+"2、5(デフォルト)、14 です。</li><li>トランスフォームプロトコル: この IPSec ポ"
+"リシーで使用するプロトコル種別です。esp、ah、ah-esp を指定できます。</li>\n"
 "すべての属性は任意です。"
 
 msgid ""
@@ -2159,8 +2136,8 @@ msgid ""
 "Create a new network. In addition, a subnet associated with the network can "
 "be created in the following steps of this wizard."
 msgstr ""
-"新しいネットワークを作成できます。合わせて、このネットワークに割り当てるサブ"
-"ネットをこのウィザードの次のステップで作成できます。"
+"新しいネットワークを作成します。このウィザードの次のステップでは、そのネット"
+"ワークに割り当てるサブネットを作成できます。"
 
 msgid "Create a new role."
 msgstr "新しいロールを作成します。"
@@ -2265,11 +2242,11 @@ msgid ""
 "want gateway please check the \"Disable Gateway\" checkbox. Advanced "
 "configuration is available by clicking on the \"Subnet Details\" tab."
 msgstr ""
-"ネットワークに割り当てられたサブネットを作成できます。有効な「ネットワークア"
-"ドレス」と「ゲートウェイ IP」を入力する必要があります。「ゲートウェイ IP」を"
-"入力しなかった場合、デフォルトでネットワークの最初の値が設定されます。ゲート"
-"ウェイが不要な場合は、「ゲートウェイなし」チェックボックスをチェックしてくだ"
-"さい。「サブネットの詳細」タブで高度な設定ができます。"
+"ネットワークに割り当てられたサブネットを作成します。有効な「ネットワークアド"
+"レス」と「ゲートウェイ IP」を入力する必要があります。「ゲートウェイ IP」を入"
+"力しなかった場合、デフォルトでネットワークの最初の値が割り当てられます。ゲー"
+"トウェイが不要な場合は、「ゲートウェイなし」チェックボックスをチェックしてく"
+"ださい。「サブネットの詳細」タブで高度な設定ができます。"
 
 msgid "Creating"
 msgstr "作成中"
@@ -2338,7 +2315,7 @@ msgid ""
 "image location must be accessible to the Image Service."
 msgstr ""
 "現在、HTTP/HTTPS URLから取得できるイメージのみがサポートされています。イメー"
-"ジの場所から Image Service へアクセスできるようにしてください。"
+"ジの場所から Image サービスへアクセスできるようにしてください。"
 
 msgctxt "Custom style theme"
 msgid "Custom"
@@ -2672,7 +2649,7 @@ msgid_plural "Delete Volume Types"
 msgstr[0] "ボリューム種別の削除"
 
 msgid "Delete Volume on Instance Delete"
-msgstr "インスタンス削除時のボリュームを削除します"
+msgstr "インスタンス削除時にボリュームを削除"
 
 #, python-format
 msgid "Delete the created network \"%s\" due to subnet creation failure."
@@ -2680,7 +2657,7 @@ msgstr ""
 "サブネット作成に失敗したため、作成したネットワーク \"%s\" を削除しました。"
 
 msgid "Delete volume when the instance is deleted"
-msgstr "インスタンスが削除された時にボリュームを削除します"
+msgstr "インスタンスの削除時にボリュームを削除します"
 
 msgid "Deleted"
 msgstr "削除"
@@ -2843,7 +2820,7 @@ msgid "Deleting VIP %s from this pool cannot be undone."
 msgstr "プールからの仮想 IP %s の削除は元に戻すことはできません。"
 
 msgid "Deny"
-msgstr "破棄"
+msgstr "拒否"
 
 msgid "Description"
 msgstr "説明"
@@ -3149,10 +3126,6 @@ msgstr "OpenStack RC v2.0 ファイルのダウンロード"
 
 msgid "Download OpenStack RC File v3"
 msgstr "OpenStack RC v3 ファイルのダウンロード"
-
-#, python-format
-msgid "Download key pair &quot;%(keypair_name)s&quot;"
-msgstr "キーペア &quot;%(keypair_name)s&quot; のダウンロード"
 
 msgid "EC2 Access Key"
 msgstr "EC2 アクセスキー"
@@ -4075,9 +4048,9 @@ msgid "Folder created successfully."
 msgstr "フォルダーが正常に作成されました。"
 
 #, python-format
-msgid "For GRE networks, valid tunnel IDs are %(min)s through %(max)s."
+msgid "For %(type)s networks, valid IDs are %(min)s to %(max)s."
 msgstr ""
-"GRE ネットワークでは、有効なトンネル ID は %(min)s から %(max)s までです。"
+"%(type)s ネットワークでは、有効な ID は %(min)s から %(max)s までです。"
 
 msgid ""
 "For TCP and UDP rules you may choose to open either a single port or a range "
@@ -4091,27 +4064,11 @@ msgstr ""
 
 #, python-format
 msgid ""
-"For VLAN networks, the VLAN VID on the physical network that realizes the "
-"virtual network. Valid VLAN VIDs are %(vlan_min)s through %(vlan_max)s. For "
-"GRE or VXLAN networks, the tunnel ID. Valid tunnel IDs for GRE networks are "
-"%(gre_min)s through %(gre_max)s. For VXLAN networks, %(vxlan_min)s through "
-"%(vxlan_max)s."
+"For a %(network_type)s network, valid segmentation IDs are %(min)s through "
+"%(max)s."
 msgstr ""
-"VLAN ネットワークでは、仮想ネットワークに使用する物理ネットワークの VLAN ID。"
-"有効な VLAN ID は %(vlan_min)s から %(vlan_max)s です。GRE と VXLAN ネット"
-"ワークの場合は、トンネル ID です。有効なトンネル ID は、GRE ネットワークでは "
-"%(gre_min)s から %(gre_max)s、VXLAN ネットワークでは %(vxlan_min)s から "
-"%(vxlan_max)s です。"
-
-#, python-format
-msgid "For VLAN networks, valid VLAN IDs are %(min)s through %(max)s."
-msgstr ""
-"VLAN ネットワークでは、有効な VLAN ID は %(min)s から %(max)s までです。"
-
-#, python-format
-msgid "For VXLAN networks, valid tunnel IDs are %(min)s through %(max)s."
-msgstr ""
-"VXLAN ネットワークでは、有効なトンネル ID は %(min)s から %(max)s までです。"
+"%(network_type)s ネットワークでは、有効なセグメンテーション ID は %(min)s か"
+"ら %(max)s までです。"
 
 msgid "Forbidden"
 msgstr "権限がありません"
@@ -4501,10 +4458,10 @@ msgid "Identity provider updated successfully."
 msgstr "認証プロバイダーが正常に更新されました。"
 
 msgid "Identity service does not allow editing user data."
-msgstr "Identity Service ではユーザーデータの編集が許可されていません。"
+msgstr "Identity サービスではユーザーデータの編集が許可されていません。"
 
 msgid "Identity service does not allow editing user password."
-msgstr "Identity Service ではユーザーパスワードの編集ができません。"
+msgstr "Identity サービスではユーザーパスワードの編集ができません。"
 
 msgid ""
 "If \"No volume type\" is selected, the volume will be created without a "
@@ -4537,7 +4494,7 @@ msgid ""
 msgstr ""
 "HTTP/HTTPS URL で指定する場合、イメージの場所のフィールドには、イメージ（バイ"
 "ナリー）への有効な直接の URL を入力する必要があります。イメージの場所へ "
-"Image Service がアクセスできるようにしてください。URL がリダイレクトのページ"
+"Image サービスがアクセスできるようにしてください。URL がリダイレクトのページ"
 "の場合や、エラーページが返ってきた場合には、登録されたイメージは使用できない"
 "可能性があります。"
 
@@ -4727,9 +4684,6 @@ msgstr "インスタンスのコンソール"
 
 msgid "Instance Console Log"
 msgstr "インスタンスのコンソールログ"
-
-msgid "Instance Count"
-msgstr "インスタンス数"
 
 msgid "Instance ID"
 msgstr "インスタンス ID"
@@ -4931,10 +4885,6 @@ msgstr "これらのポートでインスタンスを起動します。"
 msgid "Launch instance with this policy profile"
 msgstr "このポリシープロファイルでインスタンスを起動します。"
 
-#, python-format
-msgid "Launched %(count)s named \"%(name)s\"."
-msgstr "名前が \"%(name)s\" の %(count)s を起動しました。"
-
 msgid ""
 "Launching multiple instances is only supported for images and instance "
 "snapshots."
@@ -5072,6 +5022,9 @@ msgstr ""
 "既存のオブジェクトのコピーを作成します。コピー先は同じコンテナーも別のコンテ"
 "ナーも使用できます。また、新しいコピーの格納先として選択したコンテナー内のパ"
 "ス（擬似フォルダー）を指定することもできます。"
+
+msgid "Make the image visible across projects."
+msgstr "このイメージをプロジェクトで見えるようにします。"
 
 msgid "Manage"
 msgstr "管理"
@@ -5568,9 +5521,6 @@ msgstr ""
 msgid "Next Hops"
 msgstr "ネクストホップ"
 
-msgid "Next&nbsp;&raquo;"
-msgstr "次へ&nbsp;&raquo;"
-
 msgid "No"
 msgstr "いいえ"
 
@@ -5610,6 +5560,9 @@ msgstr "使用可能なプロジェクトがありません"
 
 msgid "No flavors available"
 msgstr "利用可能なフレーバーがありません"
+
+msgid "No flavors meet minimum criteria for selected image."
+msgstr "選択したイメージの最小限の要件を満たすフレーバーがありません。"
 
 msgid "No floating IP addresses allocated"
 msgstr "確保済みの Floating IP アドレスはありません"
@@ -5670,6 +5623,9 @@ msgstr "他に利用可能なボリューム種別はありません。"
 
 msgid "No ports available"
 msgstr "ポートがありません"
+
+msgid "No ports available."
+msgstr "ポートがありません。"
 
 msgid "No projects found."
 msgstr "プロジェクトが見つかりませんでした。"
@@ -5826,9 +5782,6 @@ msgstr "VM インタフェースでのネットワーク受信バイト数"
 
 msgid "Number of incoming packets for a VM interface"
 msgstr "VM インタフェースでのネットワーク受信パケット数"
-
-msgid "Number of instances to launch."
-msgstr "起動するインスタンス数。"
 
 #, python-format
 msgid ""
@@ -6244,6 +6197,9 @@ msgctxt "Task status of an Instance"
 msgid "Preparing Resize or Migrate"
 msgstr "リサイズ/マイグレーションの準備中"
 
+msgid "Prevent the deletion of the image."
+msgstr "イメージの削除を禁止します。"
+
 msgid "Preview"
 msgstr "プレビュー"
 
@@ -6576,9 +6532,6 @@ msgid "Released Floating IP"
 msgid_plural "Released Floating IPs"
 msgstr[0] "Floating IP を解放しました"
 
-msgid "Reload"
-msgstr "再読み込み"
-
 msgid "Remote"
 msgstr "接続相手"
 
@@ -6651,6 +6604,22 @@ msgstr "バグ報告"
 
 msgid "Request ID"
 msgstr "リクエスト ID"
+
+#, python-format
+msgid "Request for launching %(count)s named \"%(name)s\" has been submitted."
+msgstr "%(count)s 個の \"%(name)s\" を起動する要求を送信しました。"
+
+#, python-format
+msgid "Request for resizing of instance \"%s\" has been submitted."
+msgstr "インスタンス \"%s\" をリサイズする要求を送信しました。"
+
+#, python-format
+msgid ""
+"Request for restoring backup %(backup_name)s to volume with id: "
+"%(volume_id)s has been submitted."
+msgstr ""
+"バックアップ %(backup_name)s をボリューム %(volume_id)s に復元する要求を送信"
+"しました。"
 
 msgid "Requested snapshot would exceed the allowed quota."
 msgstr ""
@@ -6886,7 +6855,7 @@ msgid ""
 msgstr ""
 "ルーター %(name)s が作成されましたが、外部ネットワークへの接続に失敗しまし"
 "た。新規ルーターを削除する試みも失敗しました。ルーター %(name)s はまだ存在し"
-"ていますが、希望の外部ネットワークには接続されていません。"
+"ていますが、指定した外部ネットワークには接続されていません。"
 
 #, python-format
 msgid ""
@@ -7075,10 +7044,6 @@ msgid "Scheduled migration (pending confirmation) of Instance"
 msgid_plural "Scheduled migration (pending confirmation) of Instances"
 msgstr[0] "(確認待ちでの) インスタンスのマイグレーションを予約しました"
 
-#, python-format
-msgid "Scheduled resize of instance \"%s\"."
-msgstr "インスタンス \"%s\" のリサイズを予約しました。"
-
 msgctxt "Task status of an Instance"
 msgid "Scheduling"
 msgstr "スケジューリング中"
@@ -7200,9 +7165,6 @@ msgstr "キーペアを選択してください"
 #, python-format
 msgid "Select a monitor template for %s"
 msgstr "%s 用のモニターテンプレートを選択してください"
-
-msgid "Select a name for your network."
-msgstr "ネットワークの名前を選択してください。"
 
 msgid "Select a new QoS spec"
 msgstr "新しい QoS スペックを選択してください"
@@ -7545,6 +7507,9 @@ msgid "Soft Rebooted Instance"
 msgid_plural "Soft Rebooted Instances"
 msgstr[0] "インスタンスのソフトリブートを行いました"
 
+msgid "Some flavors not meeting minimum image requirements have been disabled."
+msgstr "イメージの最小限の要件を満たしていないフレーバーが無効になっています。"
+
 msgid "Something went wrong!"
 msgstr "どこかがおかしくなりました！"
 
@@ -7868,13 +7833,6 @@ msgstr "EC2 認証情報の再作成に成功しました。"
 
 #, python-format
 msgid ""
-"Successfully restored backup %(backup_name)s to volume with id: %(volume_id)s"
-msgstr ""
-"バックアップ %(backup_name)s がボリューム %(volume_id)s に正常にリストアされ"
-"ました。"
-
-#, python-format
-msgid ""
 "Successfully sent the request to change the volume type to \"%(vtype)s\" for "
 "volume: \"%(name)s\""
 msgstr ""
@@ -8111,13 +8069,6 @@ msgstr ""
 msgid "The Aggregate was updated."
 msgstr "アグリゲートが更新されました。"
 
-msgid ""
-"The Authorization Key will not be available after closing this page, so you "
-"must capture it now, or else you will be unable to use the transfer."
-msgstr ""
-"認証キーはこのページを閉じると参照できなくなるので、必ず今記録してください。"
-"さもないと、作成した譲渡を使えなくなります。"
-
 msgid "The ICMP code is invalid."
 msgstr "ICMP コードが無効です。"
 
@@ -8163,8 +8114,11 @@ msgstr ""
 "譲渡を受理するには、譲渡 ID と認証キーが譲渡先で必要です。譲渡 ID と認証キー"
 "を記録し、譲渡を受ける人に伝えてください。"
 
+msgid "The User Name field cannot be empty."
+msgstr "ユーザー名のフィールドを空にすることはできません。"
+
 msgid "The VNIC type that is bound to the neutron port"
-msgstr "neutron ポートにバインドする VNIC の種別"
+msgstr "neutron ポートにバインドする仮想 NIC の種別"
 
 #, python-format
 msgid ""
@@ -8255,7 +8209,7 @@ msgstr "インスタンスが停止されます。"
 #, python-format
 msgid ""
 "The key pair &quot;%(keypair_name)s&quot; should download automatically. If "
-"not use the link below."
+"not, use the link below."
 msgstr ""
 "キーペア &quot;%(keypair_name)s&quot; が自動的にダウンロードされます。始まら"
 "なければ、以下のリンクを使用してください。"
@@ -9046,7 +9000,7 @@ msgid "Unable to get network agents list."
 msgstr "ネットワークエージェントの一覧を取得できません。"
 
 msgid "Unable to get nova services list."
-msgstr "nova サービスの一覧を取得できません。"
+msgstr "nova のサービス一覧を取得できません。"
 
 msgid "Unable to get openrc credentials"
 msgstr "openrc 認証情報を取得できません"
@@ -9920,7 +9874,7 @@ msgid "Unknown instance"
 msgstr "不明なインスタンス"
 
 msgid "Unknown instance (None)"
-msgstr "未知のインスタンス (None)"
+msgstr "不明なインスタンス (None)"
 
 msgid "Unlock Instance"
 msgid_plural "Unlock Instances"
@@ -10307,7 +10261,7 @@ msgid "VMDK - Virtual Machine Disk"
 msgstr "VMDK - 仮想マシンディスク"
 
 msgid "VNIC Type"
-msgstr "VNIC の種別"
+msgstr "仮想 NIC の種別"
 
 msgid "VPN"
 msgstr "VPN"
@@ -10508,8 +10462,8 @@ msgid ""
 "Volume consistency groups can only be deleted after all the volumes they "
 "contain are either deleted or unassigned."
 msgstr ""
-"ボリュームの整合性グループは、含まれる全ボリュームが削除または割り当て解除さ"
-"れた後にのみ削除が可能です。"
+"ボリュームの整合性グループの削除は、そのグループに含まれる全ボリュームが削除"
+"または割り当て解除された後にのみ実行可能です。"
 
 msgid ""
 "Volume consistency groups provide a mechanism for creating snapshots of "
@@ -10670,9 +10624,6 @@ msgid ""
 msgstr ""
 "希望のルールテンプレートを指定するか、カスタムルールを設定することができま"
 "す。カスタムルールには TCP、UDP、ICMP  ルールがあります。"
-
-msgid "You cannot disable the user you are currently logged in as."
-msgstr "現在ログインしているユーザーは無効化できません。"
 
 msgid "You cannot disable your current project"
 msgstr "現在使用しているプロジェクトは無効化できません。"
@@ -10840,9 +10791,6 @@ msgstr "両方"
 
 msgid "clear"
 msgstr "clear"
-
-msgid "console is currently unavailable. Please try again later."
-msgstr "コンソールが現在利用できません。後からもう一度お試しください。"
 
 msgid "disabled"
 msgstr "disabled"

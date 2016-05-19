@@ -107,6 +107,9 @@ class NetworkTests(test.BaseAdminViewTests):
         api.neutron.is_extension_supported(
             IsA(http.HttpRequest),
             'dhcp_agent_scheduler').AndReturn(True)
+        api.neutron.is_extension_supported(
+            IsA(http.HttpRequest),
+            'dhcp_agent_scheduler').AndReturn(True)
 
         self.mox.ReplayAll()
 
@@ -149,6 +152,9 @@ class NetworkTests(test.BaseAdminViewTests):
         api.neutron.is_extension_supported(IsA(http.HttpRequest),
                                            'mac-learning')\
             .AndReturn(mac_learning)
+        api.neutron.is_extension_supported(
+            IsA(http.HttpRequest),
+            'dhcp_agent_scheduler').AndReturn(True)
 
         self.mox.ReplayAll()
 
@@ -188,6 +194,9 @@ class NetworkTests(test.BaseAdminViewTests):
         api.neutron.is_extension_supported(IsA(http.HttpRequest),
                                            'mac-learning')\
             .AndReturn(mac_learning)
+        api.neutron.is_extension_supported(
+            IsA(http.HttpRequest),
+            'dhcp_agent_scheduler').AndReturn(True)
         api.neutron.is_extension_supported(
             IsA(http.HttpRequest),
             'dhcp_agent_scheduler').AndReturn(True)
@@ -236,6 +245,9 @@ class NetworkTests(test.BaseAdminViewTests):
         api.neutron.is_extension_supported(IsA(http.HttpRequest),
                                            'mac-learning')\
             .AndReturn(mac_learning)
+        api.neutron.is_extension_supported(IsA(http.HttpRequest),
+                                           'dhcp_agent_scheduler')\
+            .AndReturn(True)
         api.neutron.is_extension_supported(IsA(http.HttpRequest),
                                            'dhcp_agent_scheduler')\
             .AndReturn(True)
@@ -387,8 +399,9 @@ class NetworkTests(test.BaseAdminViewTests):
         tenant_id = self.tenants.first().id
         network = self.networks.first()
         extensions = self.api_extensions.list()
-        api.keystone.tenant_list(IsA(http.HttpRequest)).AndReturn([tenants,
-                                                                   False])
+        api.keystone.tenant_list(
+            IsA(http.HttpRequest)
+        ).MultipleTimes().AndReturn([tenants, False])
         api.neutron.list_extensions(
             IsA(http.HttpRequest)).AndReturn(extensions)
         self.mox.ReplayAll()
@@ -414,8 +427,11 @@ class NetworkTests(test.BaseAdminViewTests):
         tenant_id = self.tenants.first().id
         network = self.networks.first()
         extensions = self.api_extensions.list()
-        api.keystone.tenant_list(IsA(http.HttpRequest)).AndReturn([tenants,
-                                                                   False])
+
+        api.keystone.tenant_list(
+            IsA(http.HttpRequest)
+        ).MultipleTimes().AndReturn([tenants, False])
+
         api.neutron.list_extensions(
             IsA(http.HttpRequest)).AndReturn(extensions)
         self.mox.ReplayAll()
@@ -432,7 +448,7 @@ class NetworkTests(test.BaseAdminViewTests):
         res = self.client.post(url, form_data)
 
         self.assertFormErrors(res, 1)
-        self.assertContains(res, "0 through %s" % ((2 ** 32) - 1))
+        self.assertContains(res, "1 through %s" % ((2 ** 32) - 1))
 
     @test.create_stubs({api.neutron: ('list_extensions',),
                         api.keystone: ('tenant_list',)})
@@ -444,8 +460,10 @@ class NetworkTests(test.BaseAdminViewTests):
         tenant_id = self.tenants.first().id
         network = self.networks.first()
         extensions = self.api_extensions.list()
-        api.keystone.tenant_list(IsA(http.HttpRequest)).AndReturn([tenants,
-                                                                   False])
+        api.keystone.tenant_list(
+            IsA(http.HttpRequest)
+        ).MultipleTimes().AndReturn([tenants, False])
+
         api.neutron.list_extensions(
             IsA(http.HttpRequest)).AndReturn(extensions)
         self.mox.ReplayAll()
